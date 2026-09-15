@@ -10,7 +10,7 @@
   <main>
     <a class="back" href="../">北海道 Powder Radar</a>
     <h1>プライバシーポリシー</h1>
-    <p>最終更新日: 2026年9月13日</p>
+    <p>最終更新日: 2026年9月15日</p>
 
     <h2>開発者によるデータ収集</h2>
     <p>本アプリは、広告、解析、トラッキング、アカウント作成を行わず、開発者が利用者の個人データを収集するサーバーを運営していません。</p>
@@ -19,7 +19,9 @@
     <p>位置情報は、現在地の表示、利用者が開始した滑走ルートの記録、スキー場付近でのチェックインと退出時の自動チェックアウトに使用します。位置情報と滑走記録は端末内に保存され、開発者へ送信されません。バックグラウンド位置情報は、利用者がチェックインまたは滑走記録を開始した場合に限って使用します。</p>
 
     <h2>外部サービスとの通信</h2>
-    <p>天気の取得ではApple WeatherKitおよびOpen-Meteoへスキー場または表示中の地図範囲の座標を送ります。利用者のGPS位置を天気取得先へ送る用途には使用しません。地図表示と利用者が選んだオフライン地図の保存では、Apple MapKitおよび国土地理院の地理院タイルへ、表示対象の地図領域に対応するリクエストを送ります。各サービスでは、通信に伴うIPアドレス等が各提供者の方針に従って処理される場合があります。</p>
+    <p>天気の取得ではApple WeatherKitおよびOpen-Meteoへスキー場または表示中の地図範囲の座標を送ります。GPSの測位値そのものや滑走ルートを天気取得先へ送信しません。ただし、現在地を中心に地図を表示すると、その周辺の粗いグリッド座標（最小間隔0.25度）から閲覧地域が伝わります。地図表示と利用者が選んだオフライン地図の保存では、Apple MapKitおよび国土地理院の地理院タイルへ、表示対象の地図領域に対応するリクエストを送ります。Open-Meteoは保守・不正利用防止のためIPアドレス等を処理し、座標を含み得る障害調査用ログを90日間保持すると説明しています。同社は利用者の本人情報と関連付けず、第三者へ共有しないとしています。国土地理院の一般プライバシーポリシーは、IPアドレス等を含むアクセス情報を自動収集し、サービス運営のために利用すると説明しています。地理院タイル固有の保持期間は公開資料で確認できていません。これらを踏まえ、本アプリは外部サービスが処理し得る「おおよその位置情報」と「その他の診断データ」を、アプリ機能のために使用し、利用者に紐付けず、トラッキングに使用しないデータとして申告します。</p>
+
+    <p><a href="https://open-meteo.com/en/terms">Open-Meteo Terms &amp; Privacy</a> · <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a> · <a href="https://www.gsi.go.jp/GSI/chosaku.htm">国土地理院コンテンツ利用規約</a></p>
 
     <h2>端末内に保存する情報</h2>
     <p>言語・お気に入り等の設定、保存した地図、チェックイン、滑走ルートを端末内に保存します。気象値は表示のため一時的にメモリへ保持し、期限切れ、バックグラウンド移行、アプリ終了に応じて破棄します。</p>
@@ -32,14 +34,14 @@
 
     <hr>
     <h1 lang="en">Privacy Policy</h1>
-    <p lang="en">Last updated: September 13, 2026</p>
+    <p lang="en">Last updated: September 15, 2026</p>
     <div lang="en">
       <h2>Data collected by the developer</h2>
       <p>The app has no advertising, analytics, tracking, or user accounts. The developer operates no server that collects users' personal data.</p>
       <h2>Location</h2>
       <p>Location is used to show your position, record rides you start, verify nearby check-ins, and check out when you leave. Location and ride records remain on your device and are not sent to the developer. Background location is used only after you start a check-in or ride recording.</p>
       <h2>External services</h2>
-      <p>The app sends ski-resort or displayed map-area coordinates to Apple WeatherKit and Open-Meteo for forecasts. It does not send your GPS position to weather providers for this purpose. Apple MapKit and Geospatial Information Authority of Japan map-tile services receive requests for areas you view or choose to save. Service providers may process network information such as IP addresses under their own policies.</p>
+      <p>The app sends ski-resort or displayed map-area coordinates to Apple WeatherKit and Open-Meteo for forecasts. It does not upload raw GPS fixes or ride routes to weather providers. However, centering the map on your location sends nearby coarse weather-grid coordinates (minimum spacing 0.25 degrees), which can reveal the area you are viewing. Apple MapKit and Geospatial Information Authority of Japan (GSI) map-tile services receive requests for areas you view or choose to save. Open-Meteo states that it processes IP addresses for maintenance and misuse prevention and retains troubleshooting logs, which may include coordinates, for 90 days. It states that this information is not linked to user identities or shared with third parties. GSI's general privacy policy states that access information including IP addresses is collected automatically and used to operate its services; published material reviewed by the developer did not specify a tile-service retention period. Accordingly, the app discloses Coarse Location and Other Diagnostic Data that external providers may process for app functionality, as not linked to the user and not used for tracking.</p>
       <h2>On-device storage</h2>
       <p>Language, favorites, saved maps, check-ins, and ride routes are stored on your device. Weather values are held temporarily in memory for display and discarded on expiry, backgrounding, or app termination.</p>
       <h2>Deletion and permissions</h2>
